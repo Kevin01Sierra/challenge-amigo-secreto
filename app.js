@@ -3,17 +3,26 @@ let amigos = [];
 
 // Implementamos una función para agregar amigos
 function agregarAmigo(){
-    nombreAmigo = document.getElementById('amigo').value;
+    let nombreAmigo = document.getElementById('amigo').value;
     // Validamos que el campo no esté vacío
-    if(nombreAmigo = ''){
+    if(nombreAmigo === ""){
         alert("Por favor, inserte un nombre.");
-    // Validamos que el nombre se encuentre en la lista de amigos
-    }else{
+    // Validamos que el nombre no se encuentre en la lista de amigos
+    }else if (amigos.includes(nombreAmigo)){
+        alert("El nombre ya se encuentra en la lista de amigos.");
+        limpiarCaja();
+    // Validamos que el nombre este en la lista de amigos
+    }else {
         // Agregamos el nombre a la lista de amigos
         amigos.push(nombreAmigo);
         // Limpiamos el campo de texto
-        document.getElementById('amigo').value = '';
+        limpiarCaja();
         // Mostramos la lista de amigos
         console.log(amigos);
     }
+}
+
+// Implementamos una funcion para limpiar la caja de texto
+function limpiarCaja(){
+    document.querySelector('#amigo').value = '';
 }
