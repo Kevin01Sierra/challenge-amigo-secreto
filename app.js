@@ -17,6 +17,8 @@ function agregarAmigo(){
         amigos.push(nombreAmigo);
         // Limpiamos el campo de texto
         limpiarCaja();
+        // Actualizamos la lista de amigos
+        actualizarListaAmigos();
         // Mostramos la lista de amigos
         console.log(amigos);
     }
@@ -25,4 +27,15 @@ function agregarAmigo(){
 // Implementamos una funcion para limpiar la caja de texto
 function limpiarCaja(){
     document.querySelector('#amigo').value = '';
+}
+
+// Implementamos una función para actualizar la lista de amigos
+function actualizarListaAmigos(){
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = "";
+    for (let amigo of amigos){
+        let li = document.createElement('li');
+        li.textContent = amigo;
+        lista.appendChild(li);
+    }
 }
