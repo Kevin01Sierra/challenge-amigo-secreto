@@ -4,6 +4,7 @@ let amigos = [];
 
 // Implementamos una función para agregar amigos
 function agregarAmigo(){
+    // Obtenemos el nombre del amigo
     let nombreAmigo = document.getElementById('amigo').value;
     // Validamos que el campo no esté vacío
     if(nombreAmigo === ""){
@@ -18,11 +19,13 @@ function agregarAmigo(){
         amigos.push(nombreAmigo);
         // Limpiamos el campo de texto
         limpiarCaja();
-        // Actualizamos la lista de amigos
-        actualizarListaAmigos();
+        // Actualizamos el resultado y la lista de amigos
+        actualizarResultado();
         // Mostramos la lista de amigos
         console.log(amigos);
+        
     }
+    
 }
 
 // Implementamos una funcion para limpiar la caja de texto
@@ -61,4 +64,15 @@ function sortearAmigo(){
     let amigoSorteado = amigos[indiceAleatorio];
     // Mostramos el amigo sorteado
     document.getElementById('resultado').textContent = `El amigo secreto sorteado es: ${amigoSorteado}`;
+    // Reiniciamos el sorteo
+    amigos = [];
+    actualizarListaAmigos();
+}
+
+// Implementamos una función para actualizar
+function actualizarResultado(){
+    // Actualizamos la lista de amigos
+    actualizarListaAmigos();
+    // Limpiamos el resultado
+    document.getElementById('resultado').textContent = ""; // Limpiamos el resultado
 }
