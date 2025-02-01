@@ -27,36 +27,36 @@ La aplicación debe validar que los campos no estén vacíos, que los nombres no
 <p align="center">Alert al añadir un campo vacío.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/16607082-3d34-46e8-bc68-f333ff346c9e"></p>
 
-- `Funcionalidad 2`:
+- `Funcionalidad 2:`
 <p align="center">Alert al sortear una lista que no existe aún.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/a4ba96e5-0bfa-41a2-9a6d-db2b4819d25c"></p>
 
- - `Funcionalidad 3`: 
+ - `Funcionalidad 3:` 
 <p align="center">Se añade tantos nombres como se desee.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/4f2540e3-0472-4f22-b9a0-785acc5b33fb"></p>
 
-- `Funcionalidad 4`: 
+- `Funcionalidad 4:` 
 <p align="center"> ¿Qué ocurre si intento ingresar un nombre que ya existe?</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/71dd7efa-1632-49b0-9825-0219ae77454d"></p>
 
- - `Funcionalidad 5`: 
+ - `Funcionalidad 5:` 
 <p align="center">Genera el alert al repetir el nombre.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/eb928bb7-fc50-4648-81f9-d3aa0bdc2bf1"></p>
  
- - `Funcionalidad 6`: 
+ - `Funcionalidad 6:` 
 <p align="center">Una vez completa la lista se sortea.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/8b822999-c024-4a2e-ab4b-5bdf049e1f52"></p>
 
- - `Funcionalidad 7`: 
+ - `Funcionalidad 7:` 
 <p align="center">Obtenemos nuestro amigo secreto y limpia la lista.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/1ea04494-cf93-4457-926f-9c96d44082a5"></p>
 
-- `Funcionalidad 8`:
+- `Funcionalidad 8:`
 <p align="center">Para volver a empesar agregamos los nombres de nuevo.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/cf044930-ae3b-40e9-84ec-a20fd407d719"></p>
 
 
- -`Funcionalidad 9`: 
+ -`Funcionalidad 9:` 
 <p align="center">Se limpia el resultado del sorteo y realizamos una nueva lista para volver a jugar.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/7fb3d02d-801f-4ada-806c-5cc82cfa40c7"></p>
 
